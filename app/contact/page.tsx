@@ -1,8 +1,10 @@
 import React from 'react'
+import HomeContact from '../../components/HomeContact'
 
 const contact = () => {
   return (
-    <div>contact</div>
+    <HomeContact/>
+
   )
 }
 
