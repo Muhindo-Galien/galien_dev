@@ -3,14 +3,14 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { MdClose } from 'react-icons/md';
-// import { SocialIcon } from 'react-social-icons';
-// import { Social } from '../typings'
+import { SocialIcon } from 'react-social-icons';
+import { Social } from '../typings'
 // import Link from './Link';
 
-// type Props= {
-//   socials:Social[]
-// }
-const Header = () => {
+type Props= {
+  socials:Social[]
+}
+const Header = ({socials}:Props) => {
   const [active, setActive] = useState(1)
   const [opened, setOpened] = useState(false)
   const handleOpened = ()=>{
@@ -51,6 +51,11 @@ const Header = () => {
            <div className={opened?"flex flex-col justify-between": "hidden"}>
               <ul className='fixed  p-0 right-0 top-0  gap-3 flex flex-col shadow-xl overflow-hidden h-full w-5/6 max-w-sm py-6 px-6 bg-gray-100 border-r overflow-y-hidden'>
                 <div className=" flex justify-between items-center pb-8">
+                <div className='flex gap-2'>
+                      {socials?.map((social)=>(
+                      <SocialIcon key={social._id} url={social.url} fgColor='white' bgColor='#1a1a1a' target={'_blank'} style={{ height: 35, width: 35 }} className='border rounded-full'/>
+                  ))}
+                  </div>
                   <MdClose className='text-3xl text-[#1a1a1a]' onClick={()=>handleOpened()}/>
                 </div>
                 <Link href='/'>

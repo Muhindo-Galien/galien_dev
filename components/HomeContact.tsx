@@ -2,6 +2,7 @@
 import React, { useRef, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from "@emailjs/browser";
+import { SocialIcon } from 'react-social-icons';
 import Connectors from './Connectors';
 import { Social } from '../typings'
 

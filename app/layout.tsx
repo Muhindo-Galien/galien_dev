@@ -34,7 +34,7 @@ export default async function RootLayout({
     <html>
       <head />
       <body>
-        <Header/>
+        <Header socials={socials}/>
         {children}
       </body>
     </html>
