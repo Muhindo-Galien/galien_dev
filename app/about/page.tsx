@@ -7,6 +7,8 @@ import { fetchExperience } from '../../utils/fetchExperience'
 import { fetchPageInfo } from '../../utils/fetchPageInfo'
 import { fetchSocials } from '../../utils/fetchSocials '
 
+export const revalidate =20
+
 const About = async() => {
   const experience: Experience[] = await fetchExperience()
   const pageInfo:PageInfo= await fetchPageInfo()

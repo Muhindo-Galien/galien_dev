@@ -8,15 +8,13 @@ import { fetchSkills } from '../utils/fetchSkills'
 import { fetchSocials } from '../utils/fetchSocials '
 import { fetchWritting } from '../utils/fetchWrittings'
 import { fetchYoutubes } from '../utils/fetchYoutubes'
-import { setGlobalState } from '../store'
 import { fetchBuildCoverImage } from '../utils/fetchBuildCoverImage'
 import { fetchWrittingCover } from '../utils/fetchWrittingCover'
-import Banner from '../components/Banner'
 import { ArticlesCover, BuildCoverImage, PageInfo, Social } from '../typings'
-import SmallAbout from '../components/SmallAbout'
-import Skills from '../components/Skills'
-import HomeContact from '../components/HomeContact'
-import ProjectWritting from '../components/ProjectWritting'
+
+
+export const revalidate =20
+
 
 export default async function RootLayout({
   children,
@@ -37,11 +35,6 @@ export default async function RootLayout({
       <head />
       <body>
         <Header/>
-        <Banner pageInfo={pageInfo} socials={socials}/>
-        <SmallAbout pageInfo={pageInfo}/>
-        <Skills/>
-        <ProjectWritting buildCover={buildCover} writtingCover={writtingCover}/>
-        <HomeContact socials={socials}/>
         {children}
       </body>
     </html>

@@ -14,7 +14,7 @@ const Education = () => {
                     <span className='py-1 ftext-center font-normal text-base'>2020-Jan - 2022-Nov</span>
                     </div>
                       <h3  className='py-1 ftext-center font-normal text-base'> Internation University of East Africa </h3>
-                    <p className='text-gray-100 font-light text-base'>Data Structures & Algorithms, Computational Theory, Computer Organization, Introduction to Artificial Intelligence, Human-Computer Interaction, Social Implications of Computing, Web Development, Advanced Frontend Web Design,App Development</p>
+                    <p className='text-gray-100 font-light text-base'>Acquired skills in Bachelor of Computer Science encompass Data Structures & Algorithms, Computational Theory, Computer Organization, Artificial Intelligence, Human-Computer Interaction, Social Computing, Web & App Development.</p>
                 </div>   
                 </div>
         </section>  

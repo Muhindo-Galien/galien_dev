@@ -3,6 +3,8 @@ import Card from '../../components/Card'
 import { Project } from '../../typings'
 import { fetchProjects } from '../../utils/fetchProjects'
 
+export const revalidate =20
+
 const Work =async () => {
   const projects:Project[]  =await fetchProjects()
 

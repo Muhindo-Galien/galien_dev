@@ -20,19 +20,19 @@ const ProjectWritting = ({writtingCover,buildCover}:Props) => {
           <div className='flex flex-col justify-center'>
               <h1 className='font-medium text-2xl mb-4'>Builds</h1>
               <div className='w-full sm:w-4/5'>
-                <ClientSideRoute route='/work'>
+                <Link href='/work'>
                 <Image src={urlFor(buildCover?.buildCoverImage).url()} height={80} width={300} alt={'projects'} className='h-80 w-50 object-cover rounded-md'/>  
                   <button className='my-2 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my work</button>
-                </ClientSideRoute>     
+                </Link>     
               </div>
           </div>
           <div className='flex flex-col '>
             <h1 className='text-left font-medium text-2xl mb-4'>Articles</h1>
             <div className='w-full sm:w-4/5'>
-                <ClientSideRoute route='/writting'>
+                <Link href='/writting'>
                 <Image src={urlFor(writtingCover?.writtingCoverImage).url()} alt={'projects'} height={80} width={300}  className='h-80 w-50 object-cover rounded-md cursor-pointer'/>       
                   <button className='my-2 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my Articles</button>
-                </ClientSideRoute>
+                </Link>
               </div>
           </div>
        </div>

@@ -5,6 +5,7 @@ import { Writting, Youtube } from '../../typings';
 import { fetchWritting } from '../../utils/fetchWrittings';
 import { fetchYoutubes } from '../../utils/fetchYoutubes';
 
+export const revalidate =20
 
 const Writing =async () => {
   const writtings:Writting[] = await fetchWritting()
