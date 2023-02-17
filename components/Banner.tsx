@@ -14,9 +14,9 @@ const Banner = ({pageInfo,socials}: MyComponentProps) => {
     <div className='max-w-3xl mx-auto '>
       <div className="mx-6 lg:mx-0  sm:py-20 flex items-center flex-col sm:flex-row justify-between">
           <div className='w-full sm:w-4/6 flex flex-col justify-center'>
-            <h2 className='font-normal text-xl my-4 sm:my-1'>Hi, I am</h2>
-            <h1 className='font-medium sm:font-bold text-4xl sm:text-2xl sm:mt-1'>{pageInfo?.name}</h1>
-            <h1 className='font-normal text-xl my-4 sm:my-1'>{pageInfo?.role}</h1>
+            <h2 className='font-normal text-2xl my-4 sm:my-1'>Hi, I am</h2>
+            <h1 className='font-medium sm:font-semibold text-3xl sm:text-3xl sm:mt-1'>{pageInfo?.name}</h1>
+            <h1 className='font-normal text-2xl my-4 sm:my-1'>{pageInfo?.role}</h1>
             <p className='my-1 text-md lg:text-base  tracking-15'>{pageInfo?.heroDescription}</p>
           </div>
           <div className='2/6 flex flex-col gap-4 justify-center items-center py-10 sm:py-0'>
