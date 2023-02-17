@@ -56,6 +56,7 @@ export interface PageInfo extends SanityBody{
   homebackground:string;
   profilePic:Image;
   email:string;
+  engineering:string[];
   socials:Social[];
 }
 

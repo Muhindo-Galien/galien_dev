@@ -23,7 +23,7 @@ const Homepage =async () => {
     <>
      <Banner pageInfo={pageInfo} socials={socials}/>
      <SmallAbout pageInfo={pageInfo}/>
-    <Skills/>
+    <Skills pageInfo={pageInfo}/>
     <ProjectWritting buildCover={buildCover} writtingCover={writtingCover}/>
     <HomeContact socials={socials}/>
       </>

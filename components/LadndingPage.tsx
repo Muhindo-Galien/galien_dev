@@ -22,11 +22,7 @@ const LadndingPage = async() => {
   
   return (
     <>
-        <Banner pageInfo={pageInfo} socials={socials}/>
-        <SmallAbout pageInfo={pageInfo}/>
-        <Skills/>
-        <ProjectWritting buildCover={buildCover} writtingCover={writtingCover}/>
-        <HomeContact socials={socials}/>
+      
     </>
   )
 }

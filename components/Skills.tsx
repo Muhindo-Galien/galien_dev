@@ -1,6 +1,14 @@
 import React from 'react'
+import { PageInfo } from '../typings';
+type Props= {
+  pageInfo: PageInfo;
+}
+const Skills = ({pageInfo}:Props) => {
+  console.log("-----------------------------------------");
+  console.log("pageInfo engineering",(pageInfo.engineering).reverse());
+  console.log("-----------------------------------------");
 
-const Skills = () => {
+  
   return (
     <div className='max-w-3xl mx-auto'>
       <h1 className='text-center font-medium text-2xl mb-4 '>~Skills</h1>
@@ -10,24 +18,13 @@ const Skills = () => {
           <h1 className='font-medium text-2xl mb-4'>Engineering</h1>
           <p>As far as building scalable and performant apps is concerned, I am proficient</p>
           <div className='pl-4'>  
+          {
+            (pageInfo?.engineering)?.reverse().map((skill)=>(
               <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Expertly utilizing HTML, CSS, Tailwind, Bootstrap, and Ant Design to create stunning and well-structured markups</p>
+                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'>{skill&&skill}</p>
               </div>
-              <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Developing production-ready apps with frameworks and libraries like NextJs, ReactJs,AngularJs,React Native</p>
-              </div>
-              <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Building Decentralised Applications (DApps) using Web3.js, Ethers.js,Hardhat ,Truffle.js, Ganache,solona, Solidity;</p>
-              </div>
-              <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Proficient in utilizing Node.js,Express.js and  Django for efficient server-side development.</p>
-              </div>
-              <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Proficient in utilizing AWS for database services</p>
-              </div>
-              <div className='flex '>
-                <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> Coordinating work using Git, Github, Gitlab;</p>
-              </div>
+            ))
+          }
           </div>
         </div>
         <div className='flex flex-col w-full sm:w-3/6'>
