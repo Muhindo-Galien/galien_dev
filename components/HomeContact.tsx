@@ -1,11 +1,15 @@
 "use client"
-
 import React, { useRef } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from "@emailjs/browser";
+import Connectors from './Connectors';
+import { Social } from '../typings'
 
+type Props= {
+  socials:Social[]
+}
 
-const HomeContact = () => {
+const HomeContact = ({socials}:Props) => {
   const formRef = useRef<HTMLFormElement>(null);
   const handleSubmit=(event: React.FormEvent)=>{
     event.preventDefault();
@@ -33,7 +37,7 @@ const HomeContact = () => {
 
   return (
     <div className='max-w-lg mx-auto'>
-       <h1 className='text-center font-medium text-2xl mb-4 pt-6 sm:pt-10 capitalize'>~contact</h1>
+       <h1 className='text-center font-medium text-2xl mb-4 pt-6 capitalize'>~contact</h1>
        <div className="mx-4">
         <p className='text-center'>we can build something amazing together? I'd love to hear from you !</p>
         <form className='flex flex-col gap-3 my-5' ref={formRef} onSubmit={handleSubmit}>
@@ -46,6 +50,7 @@ const HomeContact = () => {
           <button className="py-2 px-3 rounded-md hover:bg-[#595e64] bg-[#40454b] text-gray-200" type="submit">Send</button>
         </form>
        </div>
+       <Connectors socials={socials}/>
        <Toaster />
     </div>
   )

@@ -1,6 +1,8 @@
 import { Experience } from "../typings";
 import { groq } from "next-sanity";
 import { sanityClient } from "../sanity";
+import { use } from "react";
+import { setGlobalState } from "../store";
 
 
 export const fetchExperience = async()=>{
@@ -10,9 +12,10 @@ export const fetchExperience = async()=>{
     technologies[]->,
   }
   `;
-  const experience: Experience[] =  await sanityClient.fetch(query)
+  const res= ( await sanityClient.fetch(query))
+  const experience: Experience[] = await res
+  setGlobalState('experience',experience)
   // console.log("fetching experience",experience);
-  
   return experience;
 }
 
