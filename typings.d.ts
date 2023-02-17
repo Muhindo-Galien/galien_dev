@@ -1,3 +1,4 @@
+import { Writting } from './typings.d';
 interface SanityBody{
   _createdAt:string,
   _id:string,
@@ -52,9 +53,10 @@ export interface PageInfo extends SanityBody{
   heroImage:Image;
   heroDescription:string;
   backgroundInformation:string;
+  homebackground:string;
   profilePic:Image;
-  phoneNumber:string;
   email:string;
+  socials:Social[];
 }
 
 export interface Social extends SanityBody{
@@ -72,4 +74,16 @@ export interface Youtube extends SanityBody{
   _type:'youtube',
   title:string,
   url:string
+}
+export interface ArticlesCover extends SanityBody{
+  _type:'writtingCover',
+  title:string,
+  writtingCoverImage:Image;
+}
+
+export interface BuildCoverImage extends SanityBody{
+  writtingCoverImage(writtingCoverImage: any): unknown;
+  _type:'buildCover',
+  title:string,
+  buildCoverImage:Image;
 }

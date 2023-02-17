@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeContact from '../../components/HomeContact'
+import { useGlobalState } from '../../store'
 import { Social } from '../../typings'
 import { fetchSocials } from '../../utils/fetchSocials '
 

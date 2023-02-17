@@ -4,9 +4,7 @@ import { sanityClient } from "../sanity"
 
 export const fetchSocials = async()=>{
   const query = groq`*[_type =="social"]`
-  const socials: Social[] =  await sanityClient.fetch(query);
-  // console.log("fetching socials",socials);
-  
+  const socials: Social[] =  await sanityClient.fetch(query);  
   return socials;
 }
 

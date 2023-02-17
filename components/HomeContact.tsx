@@ -36,8 +36,8 @@ const HomeContact = ({socials}:Props) => {
 }
 
   return (
-    <div className='max-w-lg mx-auto'>
-       <h1 className='text-center font-medium text-2xl mb-4 pt-6 capitalize'>~contact</h1>
+    <div className='max-w-lg mx-auto pt-6  sm:pt-20'>
+       <h1 className='text-center font-medium text-2xl mb-4  capitalize'>~contact</h1>
        <div className="mx-4">
         <p className='text-center'>we can build something amazing together? I'd love to hear from you !</p>
         <form className='flex flex-col gap-3 my-5' ref={formRef} onSubmit={handleSubmit}>
