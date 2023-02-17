@@ -29,8 +29,8 @@ const Header = ({socials}:Props) => {
     <header className='max-w-3xl mx-auto '>
       <div className=' flex items-center justify-between py-4 lg:mx-0 mx-6 pb-9.5 sm:pb-0'>
           <Link href={'/'}>
-            <h1 onClick={()=>setActive(1)} className='font-medium text-2xl hidden sm:block'>MOG</h1>
-            <h1 onClick={()=>setActive(1)} className='font-medium text-2xl sm:hidden'>MOG</h1>
+            <h1 onClick={()=>setActive(1)} className='font-medium text-3xl hidden sm:block'>MG</h1>
+            <h1 onClick={()=>setActive(1)} className='font-medium text-3xl sm:hidden'>MG</h1>
           </Link>
           {/* tablet laphrefp */}
           <div className=''>

@@ -15,7 +15,7 @@ const Writing =async () => {
     <div className='max-w-3xl mx-auto'>
     <div className="grid grid-cols-1 sm:grid-cols-2 pt-4 gap-4 mx-6 lg:mx-0  py-2 px-4 rounded-md">
       <div>
-        <h1 className='text-left font-medium text-2xl mb-4 pt-6 sm:pt-16 capitalize'>Articles</h1>
+        <h1 className='text-left font-medium text-2xl mb-2 sm:mb-4 pt-6 sm:pt-16 capitalize'>Articles</h1>
         <div className="flex flex-col gap-4">
           {writtings?.map((article)=>{
             return(
@@ -25,7 +25,7 @@ const Writing =async () => {
         </div>
       </div>
       <div>
-        <h1 className='text-left font-medium text-2xl mb-4 pt-6 sm:pt-16 capitalize'>Youtube Tutorials</h1>
+        <h1 className='text-left font-medium text-2xl mb-2 sm:mb-4 pt-6 sm:pt-16 capitalize'>Youtube Tutorials</h1>
         <div className="flex flex-col">
           {youtubes?.map((tuto)=>{
             return(
