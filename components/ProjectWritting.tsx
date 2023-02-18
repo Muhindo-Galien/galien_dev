@@ -22,7 +22,7 @@ const ProjectWritting = ({writtingCover,buildCover}:Props) => {
               <div className='w-full sm:w-4/5'>
                 <Link href='/work'>
                 <Image src={urlFor(buildCover?.buildCoverImage).url()} height={80} width={300} alt={'projects'} className='h-80 w-50 object-cover rounded-md'/>  
-                  <button className='my-2 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my work</button>
+                  <button className='my-3 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my work</button>
                 </Link>     
               </div>
           </div>
@@ -31,7 +31,7 @@ const ProjectWritting = ({writtingCover,buildCover}:Props) => {
             <div className='w-full sm:w-4/5'>
                 <Link href='/writting'>
                 <Image src={urlFor(writtingCover?.writtingCoverImage).url()} alt={'projects'} height={80} width={300}  className='h-80 w-50 object-cover rounded-md cursor-pointer'/>       
-                  <button className='my-2 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my Articles</button>
+                  <button className='my-3 bg-[#1a1a1a] text-gray-50 py-2 px-3 w-full rounded-md font-normal text-lg capitalize'>Explore my Articles</button>
                 </Link>
               </div>
           </div>
