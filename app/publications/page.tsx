@@ -7,7 +7,7 @@ import { fetchYoutubes } from '../../utils/fetchYoutubes';
 
 export const revalidate =20
 
-const Writing =async () => {
+const Publications =async () => {
   const writtings:Writting[] = await fetchWritting()
   const youtubes:Youtube[]= await fetchYoutubes()
 
@@ -39,4 +39,4 @@ const Writing =async () => {
   )
 }
 
-export default Writing
+export default Publications

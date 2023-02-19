@@ -21,7 +21,7 @@ const Header = ({socials}:Props) => {
     {name:"home",links_to:'/'},
     {name:"about",links_to:'/about'},
     {name:"work",links_to:'/work'},
-    {name:"writting",links_to:'/writting'},
+    {name:"Publications",links_to:'/publications'},
     {name:"contact",links_to:'/contact'}
     
   ]
@@ -48,31 +48,26 @@ const Header = ({socials}:Props) => {
             </ul>
           </div>
            {/* phone */}
-           <div className={opened?"flex flex-col justify-between": "hidden"}>
-              <ul className='fixed  p-0 right-0 top-0  gap-3 flex flex-col shadow-xl overflow-hidden h-full w-5/6 max-w-sm py-6 px-6 bg-gray-100 border-r overflow-y-hidden'>
+           <div className={opened?"flex flex-col justify-between z-50 shadow-2xl": "hidden"}>
+              <ul className='fixed  p-0 right-0 top-0  gap-3 flex flex-col shadow-xl overflow-hidden h-full w-5/6 max-w-sm py-6 px-6 bg-[#1a1a1a] border-r overflow-y-hidden'>
                 <div className=" flex justify-between items-center pb-8">
                 <div className='flex gap-2'>
                       {socials?.map((social)=>(
-                      <SocialIcon key={social._id} url={social.url} fgColor='white' bgColor='#1a1a1a' target={'_blank'} style={{ height: 35, width: 35 }} className='border rounded-full'/>
+                      <SocialIcon key={social._id} url={social.url} fgColor='white' bgColor='#20262E' target={'_blank'} style={{ height: 35, width: 35 }} className='border rounded-full'/>
                   ))}
                   </div>
-                  <MdClose className='text-3xl text-[#1a1a1a]' onClick={()=>handleOpened()}/>
+                  <MdClose className='text-3xl text-[#fff]' onClick={()=>handleOpened()}/>
                 </div>
-                <Link href='/'>
-                    <li className='cursor-pointer text-lg font-normal text-[#1a1a1a]' onClick={()=>handleOpened()}>Home</li>
-                </Link>
-                <Link href={'/about'}>
-                  <li className='cursor-pointer text-lg font-normal text-[#1a1a1a]' onClick={()=>handleOpened()}>About</li>
-                </Link>
-                <Link href={'/work'}>
-                  <li className='cursor-pointer text-lg font-normal text-[#1a1a1a]' onClick={()=>handleOpened()}>work</li>
-                </Link>
-                <Link href={'/writting'}>
-                  <li className='cursor-pointer text-lg font-normal text-[#1a1a1a]' onClick={()=>handleOpened()}>writting</li>
-                </Link>
-                <Link href={'/contact'}>
-                  <li className='cursor-pointer text-lg font-normal text-[#1a1a1a]' onClick={()=>handleOpened()}>contact</li>
-                </Link>
+                {menuOptions.map((item:{name:string,links_to:string},i:number)=>{
+                return(
+                <Link href={item.links_to}> 
+                  <li 
+                  onClick={()=>setActive(i+1)}
+                  className={`px-3 py-1 rounded cursor-pointer ${active === i+1?'bg-[#20262E] text-gray-50':'text-gray-50 font-light  '} `}>
+                    {item.name}
+                  </li> 
+                </Link>)
+              })}
               </ul>
           </div>            
                 <div className="sm:hidden block text-gray-50">
