@@ -4,8 +4,8 @@ import { FaGraduationCap } from 'react-icons/fa'
 
 const Education = () => {
   return (
-        <section className="education mx-6 lg:mx-0 my-8">
-          <h1 className="font-medium text-2xl">Education </h1>
+        <section className="education mx-6 lg:mx-0 my-2">
+          <h1 className="font-medium text-xl">Education </h1>
             <div className="box-container pt-4 sm:w-5/6">
                 <div className="box">
                     <FaGraduationCap className='gradIcon'/>

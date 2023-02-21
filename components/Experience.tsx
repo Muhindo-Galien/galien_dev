@@ -9,8 +9,8 @@ type Props = {
 
 const Experience = ({experience}:Props) => {
   return (
-    <section className="education mx-6 lg:mx-0">
-    <h1 className="font-medium text-2xl">Experience</h1>
+    <section className="education mx-6 lg:mx-0 my-2">
+    <h1 className="font-medium text-xl">Experience</h1>
       <div className="box-container py-4 sm:w-5/6">
         {experience?.map((item)=>{
           return(

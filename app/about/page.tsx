@@ -19,10 +19,10 @@ const About = async() => {
     <div className='max-w-3xl mx-auto'>
       <div className='mx-6 lg:mx-0'>
         <h1 className='text-left font-medium text-2xl mb-4 pt-6 sm:pt-16 capitalize'>About Me</h1>
-        <p >{pageInfo?.backgroundInformation}
+        <p className='mb-2'>{pageInfo?.backgroundInformation}
           </p>
-          <Education/>
           <ExperienceComponent experience={experience}/>
+          <Education/>
       </div>
       <Connectors socials={socials}/>
     </div>
