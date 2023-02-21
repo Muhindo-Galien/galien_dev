@@ -27,7 +27,7 @@ const Experience = ({experience}:Props) => {
               </p>
               <div className='flex flex-wrap'>
                 <p className='font-normal mt-2 flex flex-wrap'>
-                    Technologies: {item?.technologies.map((tech)=>(<span className='text-sm' key={tech._id}>#{tech?.title},</span>))}
+                    Technologies: {item?.technologies.map((tech)=>(<span className='text-sm mr-0.5' key={tech._id}>#{tech?.title} </span>))}
                   </p>
               </div>
               </div>
