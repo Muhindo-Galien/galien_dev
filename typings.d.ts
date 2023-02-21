@@ -29,6 +29,7 @@ export interface Project extends SanityBody{
   image:Image,
   summary:string,
   technologies:Technology[];
+  istopnotch:boolean;
   linkToBuildLive:string;
   linkToGitHub:string;
 }

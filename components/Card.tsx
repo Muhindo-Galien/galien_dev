@@ -9,8 +9,6 @@ type Props={
 }
 
 const Card = ({project}:Props) => {
-  console.log( 'project',urlFor(project?.image).url());
-  
   return (
       <div className='rounded-md  shadow-sm font-globalFont bg-[#1a1a1a] cursor-pointer border border-gray-600' >
           <img className='rounded-tl-md rounded-tr-md h-80 sm:h-48 w-full object-cover' src={urlFor(project?.image).url() } alt="project" />
@@ -20,7 +18,7 @@ const Card = ({project}:Props) => {
               })}  
             </div>
           <div className='flex items-center justify-between px-4 pt-2 text-gray-100 rounded-md w-full ' >
-            <h2 className='text-lg font-medium'>Mundo </h2>
+            <h2 className='text-lg font-medium'>{project?.title} </h2>
             <div className='flex gap-4'>
               <a href={project?.linkToGitHub} target="_blank">
                 <FaGithub className='text-xl'/>
