@@ -21,7 +21,16 @@ const Experience = ({experience}:Props) => {
               <span className='py-1 ftext-center font-normal text-base'>{new Date(item?.dateStarted).toDateString()} - {item?.dateEnd?new Date(item.dateEnd).toDateString():"Present"}</span>
               </div>
                 <h3  className='py-1 ftext-center font-normal text-base'>{item?.companyName}</h3>
-              <div className='text-gray-100 font-light text-base'>{item?.points} <p className='font-normal mt-2'>Technologies: {item?.technologies.map((tech)=>(<span key={tech._id}>#{tech?.title},</span>))} </p></div>
+              <div className='text-gray-100 font-light text-base'>
+              <p>
+                {item?.points}
+              </p>
+              <div className='flex flex-wrap'>
+                <p className='font-normal mt-2 flex flex-wrap'>
+                    Technologies: {item?.technologies.map((tech)=>(<span className='text-sm' key={tech._id}>#{tech?.title},</span>))}
+                  </p>
+              </div>
+              </div>
           </div>
           )
         })}
