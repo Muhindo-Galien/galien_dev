@@ -28,7 +28,7 @@ const Skills = ({pageInfo}:Props) => {
           </div>
         </div>
         <div className='flex flex-col w-full sm:w-3/6'>
-         <h1 className='text-left font-medium text-2xl mb-4'>Soft Skills</h1>
+         <h1 className='text-left font-medium text-2xl mb-4'>Soft Skills  </h1>
           <div className='pl-0'>  
               <div className='flex '>
                 <span className='mx-2 w-4 h-2  text-base border bg-gray-200 mt-2 px-3 text-center text-gray-200 font-extralight'></span><p className='font-light text-base'> I convey my ideas in English or French, written and spoken fluently;</p>

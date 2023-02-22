@@ -62,7 +62,7 @@ const Header = ({socials}:Props) => {
                 return(
                 <Link href={item.links_to}> 
                   <li 
-                  onClick={()=>setActive(i+1)}
+                  onClick={()=>{setActive(i+1); handleOpened()}}
                   className={`px-3 py-1 rounded cursor-pointer ${active === i+1?'bg-[#20262E] text-gray-50':'text-gray-50 font-light  '} `}>
                     {item.name}
                   </li> 
