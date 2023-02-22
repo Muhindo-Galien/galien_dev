@@ -13,7 +13,7 @@ const Skills = ({pageInfo}:Props) => {
     <div className='max-w-3xl mx-auto'>
       <h1 className='text-center font-medium text-2xl mb-4 '>~Skills</h1>
       <p className='my-1 text-md lg:text-base text-center tracking-15 mx-2 sm:mx-0'>The skills I use to deliver products with a great user experience.</p>
-      <div className="flex flex-col sm:flex-row justify-between my-6 gap-4 mx-6 lg:mx-0">
+      <div className="flex flex-col sm:flex-row justify-between my-6 gap-4 mx-4  lg:mx-0">
         <div className='flex flex-col justify-center w-full sm:w-3/6 '>
           <h1 className='font-medium text-2xl mb-4'>Engineering</h1>
           <p>As far as building scalable and performant apps is concerned, I am proficient</p>

@@ -27,7 +27,7 @@ const Header = ({socials}:Props) => {
   ]
   return (
     <header className='max-w-3xl mx-auto '>
-      <div className=' flex items-center justify-between py-4 lg:mx-0 mx-6 pb-9.5 sm:pb-0'>
+      <div className=' flex items-center justify-between py-4 lg:mx-0 mx-4  pb-9.5 sm:pb-0'>
           <Link href={'/'}>
             <h1 onClick={()=>setActive(1)} className='font-medium text-3xl hidden sm:block'>MG</h1>
             <h1 onClick={()=>setActive(1)} className='font-medium text-3xl sm:hidden'>MG</h1>
@@ -49,7 +49,7 @@ const Header = ({socials}:Props) => {
           </div>
            {/* phone */}
            <div className={opened?"flex flex-col justify-between z-50 shadow-2xl": "hidden"}>
-              <ul className='fixed  p-0 right-0 top-0  gap-3 flex flex-col shadow-xl overflow-hidden h-full w-5/6 max-w-sm py-6 px-6 bg-[#1a1a1a] border-r overflow-y-hidden'>
+              <ul className='fixed  p-0 right-0 top-0  gap-3 flex flex-col shadow-xl overflow-hidden h-full w-5/6 max-w-sm py-6 px-4  bg-[#1a1a1a] border-r overflow-y-hidden'>
                 <div className=" flex justify-between items-center pb-8">
                 <div className='flex gap-2'>
                       {socials?.map((social)=>(

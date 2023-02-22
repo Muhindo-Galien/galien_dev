@@ -13,7 +13,7 @@ const ProjectWritting = ({writtingCover,buildCover}:Props) => {
   return (
     <div className='max-w-3xl mx-auto'>
        <h1 className='text-center font-medium text-2xl mb-4 pt-5'>~Work & Publications </h1>
-       <div className="grid grid-cols-1 sm:grid-cols-2 pt-4 gap-4 mx-6 lg:mx-0 bg-[#20262E] py-2 px-4 rounded-md">
+       <div className="grid grid-cols-1 sm:grid-cols-2 pt-4 gap-4 mx-4  lg:mx-0 bg-[#20262E] py-2 px-4 rounded-md">
           <div className='flex flex-col justify-center'>
               <h1 className='font-medium text-xl mb-4'>Work</h1>
               <div className='w-full sm:w-4/5'>

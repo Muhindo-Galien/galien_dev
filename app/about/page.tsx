@@ -17,7 +17,7 @@ const About = async() => {
   
   return (
     <div className='max-w-3xl mx-auto'>
-      <div className='mx-6 lg:mx-0'>
+      <div className='mx-4  lg:mx-0'>
         <h1 className='text-left font-medium text-2xl mb-4 pt-6 sm:pt-16 capitalize'>About Me</h1>
         <p className='mb-2'>{pageInfo?.backgroundInformation}
           </p>
