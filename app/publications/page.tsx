@@ -17,7 +17,7 @@ const Publications =async () => {
       <div>
         <h1 className='text-left font-medium text-2xl mb-2 sm:mb-4 pt-6 sm:pt-16 capitalize'>Articles</h1>
         <div className="flex flex-col gap-4">
-          {writtings?.map((article)=>{
+          {(writtings?.reverse())?.map((article)=>{
             return(
                 <a key={article._id} href={article?.url} target={'_blank'} className='underline'>{article.title}</a>
             )
